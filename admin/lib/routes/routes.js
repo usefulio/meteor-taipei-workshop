@@ -7,3 +7,17 @@ Router.configure({
   	, notFoundTemplate: 'NotFound'
 	, loadingTemplate: 'Loading'
 });
+
+Router.plugin('ensureSignedIn', { except: [
+	'Home'
+	, 'atChangePwd'
+	, 'atSignIn'
+	, 'atSignUp'
+	, 'atVerifyEmail'
+	, 'atResetPwd'
+	, 'atForgotPwd'
+] });
+
+Router.route('/', {
+	name: 'Home'
+});

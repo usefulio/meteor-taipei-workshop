@@ -16,7 +16,27 @@ Package.onUse(function(api) {
 
   // ====== BUILT-IN PACKAGES =======
 
-  
+  api.use([
+    'less'
+    , 'templating'
+    , 'underscore'
+    , 'mongo'
+    , 'accounts-password'
+  ], ['client', 'server']);
+
+  api.use([
+    'jquery'
+    , 'reactive-dict'
+    , 'session'
+    , 'markdown'
+  ], 'client');
+
+  api.imply('less', 'server');
+
+  api.imply([
+    'reactive-dict'
+    ,'markdown'
+  ], 'client');
 
   // ====== 3RD PARTY PACKAGES =======
 

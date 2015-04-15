@@ -1,0 +1,16 @@
+<template name="Home">
+	<div id="home" class="container center-align">
+		<h4>
+			{{#if currentUser}}
+				Welcome back, {{currentUser.emails.[0].address}}.
+			{{else}}
+				This is the admin homepage.
+			{{/if}}
+		</h4>
+		{{#if currentUser}}
+			<a href="#!" class="logout waves-effect waves-light btn-flat">Sign Out</a>
+		{{else}}
+			<a href="{{pathFor 'atSignIn'}}" class="waves-effect waves-light btn">Sign in</a>
+		{{/if}}
+	</div>
+</template>
