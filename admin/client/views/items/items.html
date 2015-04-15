@@ -1,0 +1,11 @@
+<template name="Items">
+	<div id="items">
+		<div class="collection">
+			{{#each items}}
+				<a href="{{pathFor 'EditItem' data=this}}" class="collection-item">{{title}}</a>
+			{{/each}}
+		</div>
+
+		<a href="{{pathFor 'NewItem'}}" class="add-item btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+	</div>
+</template>

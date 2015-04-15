@@ -73,6 +73,8 @@ Package.onUse(function(api) {
 
   api.addFiles('lib/app.js');
 
+  api.addFiles('lib/collections/items.js');
+
   // ====== SERVER =======
 
   // ====== CLIENT =======
@@ -80,6 +82,8 @@ Package.onUse(function(api) {
   // ====== EXPORTS =======
 
   api.export('App');
+
+  api.export('Items');
 
 });
 

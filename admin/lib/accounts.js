@@ -26,7 +26,7 @@ AccountsTemplates.configure({
     showValidating: true,
 
     // Redirects
-    homeRoutePath: '/dashboard',
+    homeRoutePath: '/',
     redirectTimeout: 4000,
 
     // Hooks

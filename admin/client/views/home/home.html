@@ -9,6 +9,8 @@
 		</h4>
 		{{#if currentUser}}
 			<a href="#!" class="logout waves-effect waves-light btn-flat">Sign Out</a>
+			<br>
+			<a href="{{pathFor 'Items'}}" class="waves-effect waves-light btn">See Items</a>
 		{{else}}
 			<a href="{{pathFor 'atSignIn'}}" class="waves-effect waves-light btn">Sign in</a>
 		{{/if}}
