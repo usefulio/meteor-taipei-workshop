@@ -1,0 +1,12 @@
+project=app
+deployment=${1-staging}
+
+echo "Deploying $project $deployment"
+
+echo "Uploading settings"
+echo {\"METEOR_SETTINGS\":$(cat config/"$deployment".json)} > config/_settings.json
+modulus env load config/_settings.json -p "$project"
+rm config/_settings.json
+
+echo "Deploying"
+modulus deploy -p "$project"

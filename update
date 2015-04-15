@@ -1,0 +1,3 @@
+(sleep 5; cd admin; PACKAGE_DIRS=../private-packages meteor update;) &
+(sleep 5; cd services; PACKAGE_DIRS=../private-packages meteor update;) &
+(cd app; PACKAGE_DIRS=../private-packages meteor update;)

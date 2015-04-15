@@ -1,0 +1,1 @@
+Email templates and template helpers as well as general email config go here.

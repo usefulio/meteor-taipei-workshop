@@ -1,0 +1,3 @@
+(sleep 5; cd admin; ./start;) &
+(sleep 5; cd services; ./start;) &
+(cd app; ./start;)

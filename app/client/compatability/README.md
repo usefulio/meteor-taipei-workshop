@@ -1,0 +1,1 @@
+Non-meteor non-package js files go here, like jquery plugins that you're just dropping into the client side app but don't have packages available on atmosphere.

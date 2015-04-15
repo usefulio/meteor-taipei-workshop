@@ -1,0 +1,1 @@
+MONGO_URL=mongodb://localhost:3001/meteor PACKAGE_DIRS=../private-packages meteor --settings config/development.json --port 4000

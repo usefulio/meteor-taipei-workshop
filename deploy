@@ -1,0 +1,10 @@
+npm install modulus
+
+echo Modulus key must be set for script to work
+echo Run this script from within the repo root 
+for project in app admin services
+do
+  cd "$project"
+    ./deploy $1
+  cd ..
+done

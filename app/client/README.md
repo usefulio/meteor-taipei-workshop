@@ -1,0 +1,1 @@
+The client directory contains everything specifically related to the client-side of the application.
